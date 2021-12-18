@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #131722;
+    color: #b2b5be;
+}
+
+#root {
+    
+}
+
+.App {
+    
+}
+
+.Settings, .WhachLists-wrp, .DensityList {
+    border-bottom: 4px #2a2e39 solid;
+    padding: 25px;
+}
+
+.Settings {
+
+}
+
+.WhachLists-wrp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: none;
+    align-content: stretch;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    width: 100%;
+    position: relative;
+}
+
+.WhachList {
+    padding: 20px 20px 0 0;
+    flex-shrink: 1;
+    width: 100%;
+}
+
+.WhachList-item-wrp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.WhachList-item {
+    padding: 20px;
+    width: 25%;
+    position: relative;
+    height: 350px;
+}
+.WhachList-item::before {
+    content: ' ';
+    position: absolute;
+    border: 1px #2a2e39 solid;
+    top: 0;
+    left: 0;
+    bottom: 3px;
+    right: 3px;
+}
+
+.WhachList-mini {
+    border-left: 4px #2a2e39 solid;
+    padding: 20px 0 0 0;
+    flex-shrink: 0;
+    flex-basis: 250px;
+}
+.WhachList-mini .title {
+    padding-left: 12px;
+}
+.WhachList-mini-item-wrp {
+    margin-top: 20px;
+    border-top: 4px #2a2e39 solid;
+}
+
+.WhachList-mini-item {
+    border-bottom: 1px #2a2e39 solid;
+    padding: 6px 12px;
+}
+
+.DensityList {
+    border-bottom: none;
+}
+
+.DensityList-item-wrp {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.DensityList-item {
+    padding: 20px;
+    width: 10%;
+    min-width: 180px;
+    position: relative;
+    height: 150px;
+}
+
+.DensityList-item::before {
+    content: ' ';
+    position: absolute;
+    border: 1px #2a2e39 solid;
+    top: 0;
+    left: 0;
+    bottom: 3px;
+    right: 3px;
+}
